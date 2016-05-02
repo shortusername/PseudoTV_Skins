@@ -1,7 +1,7 @@
 <window>
     <allowoverlay>no</allowoverlay>   
     <!-- <onload condition="StringCompare((Window(10000).Property(PTVL.VideoWindow)),true)">ActivateWindow(9506)</onload> -->
-    <onload condition="StringCompare((Window(10000).Property(PTVL.VideoWindow)),true)">ActivateWindow(10004)</onload><!-- Activate random window, workaround for 9506 starting paused -->
+    <onload condition="StringCompare((Window(10000).Property(PTVL.VideoWindow)),true)">ActivateWindow(10006)</onload><!-- Activate random window, workaround for 9506 starting paused -->
     <onload>SetProperty(PTVL.EPG_Opened,true,10000)</onload>
     <onunload>SetProperty(PTVL.EPG_Opened,false,10000)</onunload>    
     <onunload>ActivateWindow(12005)</onunload>
@@ -543,7 +543,7 @@
          <width>1350</width>
          <height>90</height>
          <aligny>center</aligny>
-         <label>[COLOR=FF0084ff]$INFO[Window(10000).Property(OVERLAY.Title)][/COLOR][COLOR=ffffffff] • [/COLOR]$INFO[Window(10000).Property(OVERLAY.SEtitle)]</label>
+         <label>[COLOR=FF0084ff]$INFO[Window(10000).Property(OVERLAY.Title)][/COLOR][COLOR=ffffffff] Â• [/COLOR]$INFO[Window(10000).Property(OVERLAY.SEtitle)]</label>
          <font>font12_Title</font>
          <textcolor>FFFFFFFF</textcolor>
          <shadowcolor>FF000000</shadowcolor>
@@ -686,7 +686,7 @@
                 <wrapmultiline>false</wrapmultiline>
                 <scrollspeed>40</scrollspeed>
                 <scrollsuffix> - </scrollsuffix>
-                <label>$INFO[Window(10000).Property(EPG.Title)][COLOR=C0C0C0C0] • [/COLOR][COLOR=FFFFFFFF]$INFO[Window(10000).Property(EPG.SEtitle)][/COLOR]</label>
+                <label>$INFO[Window(10000).Property(EPG.Title)][COLOR=C0C0C0C0] Â• [/COLOR][COLOR=FFFFFFFF]$INFO[Window(10000).Property(EPG.SEtitle)][/COLOR]</label>
             </control>
         </control>
         <control type="grouplist">
